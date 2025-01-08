@@ -1,4 +1,5 @@
 [tool.poetry]
+package-mode = false
 name = "deployment-model-inference"
 version = "0.1.0"
 description = "Inference pipeline for deployment of the demo with pima indians dataset"
@@ -16,9 +17,3 @@ joblib = "^1.4.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-# Add this section to specify the package location
-[tool.poetry.packages]
-packages = [
-    { include = "deployment_model_inference", from = "src" },
-]
