@@ -3,7 +3,6 @@ title: Deployment Model Inference
 description: A description of the project.
 ---
 
-```markdown
 # Deployment Model Inference
 
 This project demonstrates a Dockerized inference pipeline for deploying a machine learning model. The pipeline loads a trained model, preprocesses input data, and makes predictions using the model.
@@ -143,7 +142,7 @@ For questions or feedback, feel free to reach out:
 - **Author**: Iair
 - **Email**: i.linker8@gmail.com
 - **GitHub**: [iair](https://github.com/iair)
-```
+
 
 ---
 
