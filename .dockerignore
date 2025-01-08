@@ -1,0 +1,26 @@
+# Ignore Git files
+.git/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+
+# Ignore local environment files
+.env
+.env.local
+
+# Ignore large data files or directories
+models/
+data/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
