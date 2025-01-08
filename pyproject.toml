@@ -1,4 +1,5 @@
 [tool.poetry]
+package-mode = false
 name = "deployment-model-inference"
 version = "0.1.0"
 description = "Inference pipeline for deployment of the demo with pima indians dataset"
@@ -13,7 +14,6 @@ scikit-learn = "^1.6.0"
 xgboost = "^2.1.3"
 joblib = "^1.4.2"
 
-
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

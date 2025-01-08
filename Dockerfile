@@ -7,14 +7,14 @@ RUN pip install poetry
 # Set the working directory
 WORKDIR /app
 
-# Copy only Poetry files first to leverage Docker caching
+# Copy only the dependency files first to leverage Docker caching
 COPY pyproject.toml poetry.lock /app/
 
-# Install dependencies (no virtual environment)
+# Install dependencies without creating a virtual environment
 RUN poetry config virtualenvs.create false && poetry install --no-interaction --no-ansi
 
 # Copy the rest of the project files
-COPY . /app
+COPY . /app/
 
 # Command to run the inference script
 CMD ["poetry", "run", "python", "src/inference.py"]
